@@ -72,8 +72,12 @@
 <meta property="og:description" content="Noah Bressner, Binghamton University senior with four years’ experience in digital, broadcast and print media. Bylines in Times Union (Albany) and Pipe Dream (Binghamton University). Videos and news packages for WIVT/WBGH NewsChannel 34 (Binghamton)." />
 <meta name="twitter:description" content="Noah Bressner, Binghamton University senior with four years’ experience in digital, broadcast and print media. Bylines in Times Union (Albany) and Pipe Dream (Binghamton University). Videos and news packages for WIVT/WBGH NewsChannel 34 (Binghamton).">
     
-        
+         <meta property="og:title" content="Noah Bressner" />
+        <meta property="og:image" content="" /> 
+        <meta name="twitter:title" content="Noah Bressner">
+        <meta name="twitter:image" content="" >           
         </head>
+	
 
         <body>
             
