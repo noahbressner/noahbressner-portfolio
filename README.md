@@ -31,7 +31,7 @@
 
 <script>
     $(window).on('load', function () {
-        $("#header").removeClass("preload");
+        $("#header").removeClass("preload"); 
     });
     
     $(document).ready(function(){
