@@ -63,7 +63,7 @@
                 </script>
                 
                         <title>Noah Bressner</title>
-                        <link rel="shortcut icon" type="image/png" href="http://emmacsiegel.com/img/favicon.png" />
+                        <link rel="shortcut icon" type="image/png" href="" />
        
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image">
