@@ -34,7 +34,7 @@ body, html, article {
   display: flex;
   -ms-flex-flow: column;
       flex-flow: column;
-  height: 80%;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
