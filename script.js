@@ -1,53 +1,49 @@
-$(document).ready(function() {
-    (function($) {
+// External js being loaded - https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js
+$(function() {
+    waypoints.init();
+})
 
-      /**
-       * Copyright 2012, Digital Fusion
-       * Licensed under the MIT license.
-       * http://teamdf.com/jquery-plugins/license/
-       *
-       * @author Sam Sehnert
-       * @desc A small plugin that checks whether elements are within
-       *     the user visible viewport of a web browser.
-       *     only accounts for vertical position, not horizontal.
-       */
+var waypoints = {
+    init: function() {
+        // container - used for toggling classes to animate content
+        this.container = $('html');
 
-      $.fn.visible = function(partial) {
+        // header - main header container: an inner wrapper element should get fixed (.header-bar)
+        this.header = $('[data-animate-header-container]');
 
-          var $t            = $(this),
-              $w            = $(window),
-              viewTop       = $w.scrollTop(),
-              viewBottom    = viewTop + $w.height(),
-              _top          = $t.offset().top,
-              _bottom       = _top + $t.height(),
-              compareTop    = partial === true ? _bottom : _top,
-              compareBottom = partial === true ? _top : _bottom;
+        // headerHeight - the inner header element that gets fixed
+        this.headerHeight = $('[data-animate-header]').outerHeight();
 
-        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+        // targetElement - when this element hits top of screen the header  animates
+        this.targetElement = $('[data-animate-header-target]');
 
-      };
+        // bindControls
+        this.bindControls();
+    },
+    animateHeader: function() {
+        var self = this;
 
-    })(jQuery);
+        // Add class when header is in/out of view
+        self.header.waypoint(function(direction) {
+            if (direction === "up") {
+                self.container.removeClass('header-past header-hide');
+            } else {
+                self.container.addClass('header-past');
+            }
+        }, { offset: -self.headerHeight });
 
-    var win = $(window);
+        // Animate header in when this element hits top of screen
+        self.targetElement.waypoint(function(direction) {
+            if (direction === "up") {
+                self.container.addClass('header-hide').removeClass('header-show');
+            } else {
+                self.container.addClass('header-show').removeClass('header-hide');
+            }
+        }, { offset: 0 });
+    },
+    bindControls: function () {
+        var self = this;
 
-    var allMods = $(".work-item");
-
-    allMods.each(function(i, el) {
-      var el = $(el);
-      if (el.visible(true)) {
-        el.addClass("already-visible"); 
-      } 
-    });
-
-    win.scroll(function(event) {
-
-      allMods.each(function(i, el) {
-        var el = $(el);
-        if (el.visible(true)) {
-          el.addClass("come-in"); 
-        } 
-      });
-
-    });
-});
+        self.animateHeader();
+    },
+}
