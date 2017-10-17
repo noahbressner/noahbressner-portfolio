@@ -6,7 +6,9 @@
 .article-subtitle {
   font-weight: 300;
   letter-spacing: .15em;
-  max-width: 330px;
+  max-width: 1080px;
+  margin: 0px auto;
+  font-size: 17px;
 }
 
 body {
