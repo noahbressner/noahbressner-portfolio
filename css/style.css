@@ -90,7 +90,7 @@ body, html, article {
 .header-bar {
 	display: flex;
 	font-size: 12px;
-	justify-content: space-around;
+	justify-content: space-between;
 	text-transform: uppercase;
 
 	a {
