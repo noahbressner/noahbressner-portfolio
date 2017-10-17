@@ -54,7 +54,7 @@ body, html, article {
 
 // Page Header
 .article-header {
-	background-color: #1b1b1b;
+	background-color: #E31E25;
 	color: white;
 	display: flex;
 	flex-flow: column;
