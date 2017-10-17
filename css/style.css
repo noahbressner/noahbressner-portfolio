@@ -1,4 +1,9 @@
-.article-subtitle, .article-title {
+.article-title {
+  font-weight: 300;
+  letter-spacing: .15em;
+}
+
+.article-subtitle {
   font-weight: 300;
   letter-spacing: .15em;
   max-width: 330px;
