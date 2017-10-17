@@ -85,6 +85,12 @@ body, html, article {
   text-decoration: none;
 }
 
+.divider{
+    width: 5px;
+    height:auto;
+    display: inline-block;
+}
+
 [data-animate-header] {
   left: 18px;
   padding: 12px 10px 11px;
