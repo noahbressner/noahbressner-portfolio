@@ -52,6 +52,14 @@ body, html, article {
   padding-top: calc(2em + 40px);
 }
 
+.article-section {
+	line-height: 200%;
+	margin: 0 auto;
+	max-width: 680px;
+	padding: 3em 2em 100vh;
+	text-align: justify;
+}
+
 .article-subtitle {
   font-style: italic;
   display: block;
