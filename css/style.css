@@ -75,11 +75,11 @@ body, html, article {
 }
 
 .header-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   font-size: 18px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
           justify-content: space-between;
   text-transform: uppercase;
 }
@@ -102,13 +102,13 @@ body, html, article {
 }
 .header-past.header-hide [data-animate-header] {
   top: -40px;
-  -webkit-transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
 }
 .header-show [data-animate-header] {
   top: 0;
-  -webkit-transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
+  transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1) !important;
 }
 
 /* card */
