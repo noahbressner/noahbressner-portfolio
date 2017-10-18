@@ -86,8 +86,7 @@ body, html, article {
   text-decoration: none;
 }
 
-[data-animate-header] {
-  background-color: white;
+[data-animate-header] 
   left: 18px;
   padding: 12px 10px 11px;
   position: absolute;
