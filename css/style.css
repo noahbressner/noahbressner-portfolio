@@ -7,8 +7,8 @@
 .article-subtitle {
   font-weight: 300;
   letter-spacing: .15em;
-  max-width: 1080px;
-  margin: 0px auto;
+  max-width: 750px;
+  text-align: left;
   font-size: 17px;
 }
 
