@@ -45,7 +45,7 @@ body, html, article {
   display: flex;
   -ms-flex-flow: column;
       flex-flow: column;
-  height: 100%;
+  height: 100% !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -70,6 +70,7 @@ body, html, article {
   margin-bottom: 10px;
   text-transform: uppercase;
   color: white
+  text-align: center !important;
 }
 
 .header-bar {
