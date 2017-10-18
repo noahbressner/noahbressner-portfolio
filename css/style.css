@@ -134,7 +134,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1335px) {
   .band {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
