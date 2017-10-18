@@ -1,3 +1,13 @@
+$cubic-bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
+$font: 'Oswald', sans-serif;
+$header-height: 40px;
+
+// Calc
+@mixin calc($property, $value) {
+	#{$property}: -webkit-calc(#{$value});
+	#{$property}:    -moz-calc(#{$value});
+	#{$property}:         calc(#{$value});
+}
 
 .article-title {
   font-weight: 300;
