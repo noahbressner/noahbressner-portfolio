@@ -2,7 +2,7 @@
 .article-title {
   font-weight: 300;
   letter-spacing: .15em;
-  "Oswald", sans-serif !important;
+  text-align: left;
 }
 
 .article-subtitle {
