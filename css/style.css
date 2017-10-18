@@ -1,3 +1,43 @@
+// Demo Reusables
+$cubic-bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
+$font: 'Oswald', sans-serif;
+$header-height: 40px;
+
+// Calc
+@mixin calc($property, $value) {
+	#{$property}: -webkit-calc(#{$value});
+	#{$property}:    -moz-calc(#{$value});
+	#{$property}:         calc(#{$value});
+}
+
+// Fonts
+%font-bold {
+	font-weight: 700;
+}
+
+%font-light {
+	font-weight: 300;
+	letter-spacing: .15em;
+}
+
+%font-regular {
+	font-family: $font;
+	font-weight: 400;
+}
+
+// Crispy/Better Font Rendering
+%text-crispy {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Demo Styles
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 .article-title {
   font-weight: 300;
   letter-spacing: .15em;
@@ -12,6 +52,8 @@
 }
 
 body {
+    @extend %font-regular;
+	// @extend %text-crispy;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
