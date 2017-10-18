@@ -195,3 +195,14 @@ h2 {
   margin: 2em 0 0 0;
   text-align: left;
 }
+
+/*about page*/
+
+.about-page {
+	line-height: 200%;
+	margin: 0 auto;
+	max-width: 680px;
+	padding: 3em 2em 100vh;
+	text-align: justify;
+}
+}
