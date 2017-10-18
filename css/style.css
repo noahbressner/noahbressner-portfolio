@@ -74,7 +74,7 @@ body, html, article {
 .header-bar {
   display: -webkit-box;
   display: -ms-flexbox;
-  font-size: 18px;
+  font-size: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -83,12 +83,6 @@ body, html, article {
 .header-bar a {
   color: white;
   text-decoration: none;
-}
-
-.divider{
-    width: 5px;
-    height:auto;
-    display: inline-block;
 }
 
 [data-animate-header] {
