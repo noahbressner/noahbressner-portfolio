@@ -1,42 +1,3 @@
-// Demo Reusables
-$cubic-bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
-$font: 'Oswald', sans-serif;
-$header-height: 40px;
-
-// Calc
-@mixin calc($property, $value) {
-	#{$property}: -webkit-calc(#{$value});
-	#{$property}:    -moz-calc(#{$value});
-	#{$property}:         calc(#{$value});
-}
-
-// Fonts
-%font-bold {
-	font-weight: 700;
-}
-
-%font-light {
-	font-weight: 300;
-	letter-spacing: .15em;
-}
-
-%font-regular {
-	font-family: $font;
-	font-weight: 400;
-}
-
-// Crispy/Better Font Rendering
-%text-crispy {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-// Demo Styles
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
 
 .article-title {
   font-weight: 300;
@@ -136,10 +97,10 @@ body, html, article {
 }
 .header-past [data-animate-header] {
   position: fixed;
-  top: -$header-height;
+  top: -40;
 }
 .header-past.header-hide [data-animate-header] {
-  top: -$header-height;
+  top: -40;
   -webkit-transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
