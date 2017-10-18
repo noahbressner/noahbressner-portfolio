@@ -1,4 +1,4 @@
-// External js being loaded - https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js
+// External js being loaded - noahbressner.github.io/js/waypoints.min.js
 $(function() {
     waypoints.init();
 })
