@@ -1,6 +1,6 @@
 // External js being loaded - noahbressner.github.io/js/waypoints.min.js
 /*global $ */
-$(function() {
+$(function () {
     waypoints.init();
 })
 
