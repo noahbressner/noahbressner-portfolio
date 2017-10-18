@@ -96,10 +96,10 @@ body, html, article {
 }
 .header-past [data-animate-header] {
   position: fixed;
-  top: -40;
+  top: -40px;
 }
 .header-past.header-hide [data-animate-header] {
-  top: -40;
+  top: -40px;
   -webkit-transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: top 0.85s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
