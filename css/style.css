@@ -11,7 +11,7 @@
   max-width: 750px;
   text-align: left;
   font-size: 17px;
-  "Oswald", sans-serif !important;
+  font-family: "Oswald", sans-serif !important;
 }
 
 body {
@@ -25,7 +25,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  "Oswald", sans-serif !important;
+  font-family: "Oswald", sans-serif !important;
 }
 
 body {
@@ -73,8 +73,8 @@ body, html, article {
   font-size: 5.8rem;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: white
-  "Oswald", sans-serif !important;
+  color: white;
+  font-family: "Oswald", sans-serif !important;
   
 }
 
@@ -90,7 +90,7 @@ body, html, article {
 .header-bar a {
   color: white;
   text-decoration: none;
-  "Oswald", sans-serif !important;
+  font-family: "Oswald", sans-serif !important;
 }
 
 [data-animate-header] {
@@ -184,6 +184,7 @@ h2 {
   margin: 0;
   color: #333;
   text-align: left;
+  font-family: "Roboto", sans-serif;
 }
 
 .card span {
@@ -194,6 +195,7 @@ h2 {
   letter-spacing: .05em;
   margin: 2em 0 0 0;
   text-align: left;
+  "Roboto", sans-serif;
 }
 
 /*about page*/
