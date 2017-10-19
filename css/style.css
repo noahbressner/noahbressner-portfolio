@@ -184,7 +184,7 @@ h2 {
   margin: 0;
   color: #333;
   text-align: left;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .card span {
@@ -195,7 +195,7 @@ h2 {
   letter-spacing: .05em;
   margin: 2em 0 0 0;
   text-align: left;
-  "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
 }
 
 /*about page*/
